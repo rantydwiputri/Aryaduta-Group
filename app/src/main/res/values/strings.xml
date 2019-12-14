@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Aryaduta Group</string>
+    <string name="hotel_name">Hotels</string>
+    <string name="dining_name">Dining</string>
+    <string name="join_name">Member</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

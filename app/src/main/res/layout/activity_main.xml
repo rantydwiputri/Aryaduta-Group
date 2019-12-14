@@ -1,0 +1,150 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/white"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:id="@+id/logo"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:paddingTop="15dp"
+            android:id="@+id/font"
+            android:text="WELCOME ARYADUTA\nyour exclusive program to get more benefits."
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:text="----------------------------------------"
+            android:textAlignment="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/hotel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:src="@drawable/hotel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/hotel"
+                android:layout_marginBottom="42dp"
+                android:paddingLeft="40dp"
+                android:paddingBottom="10dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:text="HOTELS"
+                android:id="@+id/gambarhotels"
+                android:onClick="gambarhotels" />
+
+
+            <TextView
+                android:id="@+id/kata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/gambarhotels"
+                android:paddingTop="50dp"
+                android:layout_marginTop="-41dp"
+                android:fontFamily="casual"
+                android:text="Avail exclusive discount and offers by\nbecoming a member"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/join"
+                android:onClick="join"
+                android:layout_below="@id/kata"
+                android:layout_margin="20dp"
+                android:text="JOIN"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="==========================\ncontact us\n=========================="
+                android:id="@+id/contact"
+                android:layout_below="@id/join"
+                android:paddingTop="30dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/primary_text_light"
+                android:textStyle="normal"
+                android:fontFamily="cursive"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/phone"
+                android:onClick="phone"
+                android:src="@drawable/telpon"
+                android:layout_below="@id/contact"
+                android:layout_marginLeft="55dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/kontak"
+                android:onClick="kontak"
+                android:layout_marginLeft="55dp"
+                android:paddingLeft="5dp"
+                android:text="call"
+                android:textSize="15sp"
+                android:layout_below="@id/phone" />
+
+            <ImageView
+                android:id="@+id/mail"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/contact"
+                android:layout_alignLeft="@id/phone"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="-5dp"
+                android:onClick="mail"
+                android:src="@drawable/mail1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pesan"
+                android:onClick="pesan"
+                android:layout_marginLeft="210dp"
+                android:paddingLeft="5dp"
+                android:text="mail"
+                android:textSize="15sp"
+                android:layout_below="@id/mail"
+                android:layout_alignLeft="@id/phone"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
